@@ -27,6 +27,7 @@ public class JavaJxlsExample {
 
     /**
      * @param args the command line arguments
+     * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException {
 //        try(InputStream is = org.jxls.demo.guide.ObjectCollectionDemo.class.getResourceAsStream("object_collection_template.xls")) {
