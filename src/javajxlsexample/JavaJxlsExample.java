@@ -38,7 +38,7 @@ public class JavaJxlsExample {
         try (OutputStream os = new FileOutputStream("output.xls")) {
             Employee e1=new Employee("a", 21, 3000);
             Employee e2=new Employee("b", 25, 6000);
-            Employee e3=new Employee("c", 28, 9000);
+            Employee e3=new Employee("d", 28, 9000);
             List<Employee> employees=new ArrayList();
             employees.add(e1);
             employees.add(e2);
@@ -47,7 +47,7 @@ public class JavaJxlsExample {
             context.putVar("employees", employees);
             JxlsHelper.getInstance().processTemplate(is, os, context);
         }   catch (FileNotFoundException ex) {
-                Logger.getLogger(JavaJxlsExample.class.getName()).log(Level.SEVERE, null, ex);
+//                Logger.getLogger(JavaJxlsExample.class.getName()).log(Level.SEVERE, null, ex);
             }
     }
     }
